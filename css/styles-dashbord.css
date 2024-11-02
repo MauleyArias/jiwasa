@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header (barra superior) */
+.dashboard__header {
+    background-color: #fff7f1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+}
+
+/* Logo */
+.logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+/* Contenedor de notificaciones y perfil */
+.header__info-container {
+    display: flex;
+    align-items: center;
+}
+
+.notification__container, .profile__container {
+    position: relative;
+    margin-left: 20px;
+}
+
+.notification {
+    width: 25px;
+    cursor: pointer;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Dropdowns */
+.notification__dropdown, .profile__dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    right: 0;
+    z-index: 1;
+}
+
+.notification__dropdown p, .profile__dropdown p {
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #333;
+}
+
+.notification__dropdown p:hover, .profile__dropdown p:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mostrar dropdown cuando esté activo */
+.show {
+    display: block;
+}
+
+
+
+
+
+/* Sidebar Menu */
+.dashboard__main{
+    display: flex;
+    height: 100vh;
+}
+.dashboard {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dashboard__menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dashboard__option {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #444;
+    margin-bottom: 5px;
+}
+
+.dashboard__suboptions {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.dashboard__suboption {
+    cursor: pointer;
+    padding: 5px 0;
+    color: #ccc;
+}
+
+.dashboard__suboption:hover {
+    color: white;
+}
+
+/* Main Content Area */
+.dashboard__content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    overflow-y: auto;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 14px;
+}

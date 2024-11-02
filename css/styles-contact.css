@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/*------------------CONTACT------------------ */
+.contact-section {
+ width: 100%;
+ margin-bottom:13px ;
+ justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1e1b1b;
+    padding: 60px 150px 60px 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-form {
+    margin-right: 20px;
+}
+
+.contact-form h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #eae6d9;
+}
+
+.contact-form form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #eae6d9;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #eae6d9;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #eae6d9;
+    font-size: 16px;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #f0f0e6;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-detail {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.contact-detail:last-child {
+    margin-right: 0;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    background-color: #f0f0e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #1e1b1b;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d6d4c4;
+}
+
+/* Contact Info */
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eae6d9;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-info li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    filter: invert(100%);
+}
+
+.contact-info li {
+    font-size: 16px;
+    color: #f0f0e6;
+}
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    background-image: url(../assets/image/fondo-login.png);
+    background-image: url(../assets/image/fondo-login.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+.login-register{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    
+    
+}
+.login-register__container{
+    width: 70%;
+    height: 80%;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px #231f20;
+    display: flex;
+    background-color: #231f20;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+}
+
+.form-active {
+    display: block;
+    opacity: 1;
+}
+.btn-toggle {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-register__info{
+    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.login-register__info h2{
+    font-size: 30px;
+}
+.login-register__info form{
+    font-size: 10px;
+}
+.login-register__info input{
+    font-size: 15px;
+    border-radius: 15px;
+    padding: 5px;
+}
+.login-register__info button{
+    padding: 5px;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #231f20;
+    border: 2px solid #fff;
+    
+}
+.login-register__info p{
+    font-size: 14px;
+}
+.login-register__info p:hover{
+    color: #648be6;
+}
+
+.login-register__image-slider{
+    border: 2px solid #231f20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+    border-radius: 0px 50px 50px 0;
+    overflow: hidden;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Slider básico */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transición suave */
+    object-position: center;
+    
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+

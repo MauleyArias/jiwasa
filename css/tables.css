@@ -1,0 +1,68 @@
+/* Estilo general de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff7f1; /* Fondo de la tabla */
+    color: #231f20; /* Texto en negro */
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras sutiles */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+}
+
+/* Estilo para las celdas del encabezado */
+th {
+    background-color: #231f20; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Estilo para las celdas del cuerpo de la tabla */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eaeaea; /* Línea divisoria gris claro */
+}
+
+/* Color alterno en las filas para mayor legibilidad */
+tr:nth-child(even) {
+    background-color: #f8f8f8; /* Gris muy claro */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Estilo para los enlaces de acción (Modificar, Eliminar) */
+a {
+    text-decoration: none;
+    color: #231f20; /* Color negro para los enlaces */
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Enlace de Modificar */
+a.modificar_usuario {
+    background-color: #eaeaea; /* Botón gris claro */
+}
+
+a.modificar_usuario:hover {
+    background-color: #fff7f1; /* Cambio de fondo al pasar el mouse */
+}
+
+/* Enlace de Eliminar */
+a[onclick] {
+    background-color: #231f20; /* Botón negro */
+    color: #ffffff;
+}
+
+a[onclick]:hover {
+    background-color: #444444; /* Oscurecer al pasar el mouse */
+}
+
+/* Estilo para el hover en las filas */
+tr:hover {
+    background-color: #fff7f1; /* Color de fondo más claro al hacer hover */
+}

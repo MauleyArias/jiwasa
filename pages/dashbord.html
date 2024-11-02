@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles-dashbord.css">
+    
+
+
+    
+</head>
+<body>
+    <header class="dashboard__header">
+        <div class="logo__container">
+            <img class="logo" src="../assets/image/jiwasa-logo.png" alt="">
+        </div>
+
+
+
+        <div class="header__info-container">
+
+            <div class="notification__container">
+                <img class="notification" id="notification-icon" src="../assets/image/campana.png" alt="Notificaciones">
+                <!-- Dropdown de notificaciones -->
+                <div class="notification__dropdown" id="notification-menu">
+                    <p>Notificación 1</p>
+                    <p>Notificación 2</p>
+                    <p>Notificación 3</p>
+                </div>
+            </div>
+
+
+    
+            <div class="profile__container">
+                <img class="profile" id="profile-icon" src="../assets/image/profile-picture.png" alt="Foto de perfil">
+                <!-- Dropdown de perfil -->
+                <div class="profile__dropdown" id="profile-menu">
+                    <p>Ver Perfil</p>
+                    <p>Configuración</p>
+                    <p>Cerrar Sesión</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </header>
+    <section class="dashboard__main">
+        <aside class="dashboard">
+            <ul class="dashboard__menu">
+                <!-- Opción Reservas -->
+                <li>
+                    <div class="dashboard__option" id="reservas-option">
+                        <span class="ee" data-file="index.php">Reservas</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <ul class="dashboard__suboptions" id="reservas-suboptions">
+                        <li class="dashboard__suboption" data-file="clientes.html">Clientes</li>
+                        <li class="dashboard__suboption" data-file="metodo-pago.html">Método de Pago</li>
+                        <li class="dashboard__suboption" data-file="notificaciones.html">Notificaciones</li>
+                    </ul>
+                </li>
+    
+                <!-- Opción Reportes -->
+                <li>
+                    <div class="dashboard__option" id="reportes-option">
+                        <span>Reportes</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <ul class="dashboard__suboptions" id="reportes-suboptions">
+                        <li class="dashboard__suboption" data-file="reportes-reservas.html">Reservas</li>
+                        <li class="dashboard__suboption" data-file="reportes-clientes.html">Clientes</li>
+                    </ul>
+                </li>
+    
+                <!-- Opción Usuarios -->
+                <li>
+                    <div class="dashboard__option" id="usuarios-option">
+                        <span>Usuarios</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <ul class="dashboard__suboptions" id="usuarios-suboptions">
+                        <li class="dashboard__suboption" data-file="../vistas/usuarios.php">Clientes</li>
+                        <li class="dashboard__suboption" data-file="../vistas/registros-user.php">Registros</li>
+                        <li class="dashboard__suboption" data-file="../vistas/jijsd.php">Registros</li>
+                    </ul>
+                </li>
+    
+                <!-- Opción Inventario -->
+                <li>
+                    <div class="dashboard__option" id="inventario-option">
+                        <span>Inventario</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <ul class="dashboard__suboptions" id="inventario-suboptions">
+                        <li class="dashboard__suboption" data-file="inventario-hoteles.html">Hoteles</li>
+                        <li class="dashboard__suboption" data-file="inventario-transporte.html">Transporte</li>
+                        <li class="dashboard__suboption" data-file="inventario-investigacion.html">Investigación</li>
+                    </ul>
+                </li>
+    
+                <!-- Opción Servicios -->
+                <li>
+                    <div class="dashboard__option" id="servicios-option">
+                        <span>Servicios</span>
+                        <span class="arrow">→</span>
+                    </div>
+                    <ul class="dashboard__suboptions" id="servicios-suboptions">
+                        <li class="dashboard__suboption" data-file="servicios-destinos.html">Destinos</li>
+                        <li class="dashboard__suboption" data-file="servicios-categorias.html">Categorías</li>
+                        <li class="dashboard__suboption" data-file="servicios-imagenes.html">Imágenes</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+
+
+        
+        <div class="dashboard__content">
+
+        </div>
+    </section>
+
+
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
